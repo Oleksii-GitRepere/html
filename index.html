@@ -45,11 +45,26 @@
               </p>
         </div>
     -->
-        <a href="#"><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></a>
-        <a href="#"><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></a>
+    <div class="slick-carousel">
+        <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
+        <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
+    </div>
     </main>
     <footer>
 
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(".slick-carousel").slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            slide: "div",
+            cssEase: "linear"
+      });
+      
+    </script>
 </body>
 </html>
