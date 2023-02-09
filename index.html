@@ -24,11 +24,17 @@
                 background-color: gray;
                 
             }
-            slick-arrow {
-                top: 0;
-                left: 100px;
-                position: absolute;
-            }
+            .clr-gry.slick-arrow {
+    top: 0;
+    position: absolute;
+}
+.fa-angle-left.clr-gry {
+    right: 10px;
+}
+
+.fa-angle-right.clr-gry {
+    right: 0;
+}
         </style>
     </header>
     <main>
@@ -58,11 +64,12 @@
         </div>
     -->
     <div class="slick-carousel" style="align-items: center;">
-
+        <button class="pp2">back</button>;
             <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
             <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
             <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
             <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
+        <button class="nn2">forward</button>;
     </div>
     </main>
     <footer>
@@ -77,6 +84,9 @@
         slidesToShow: 3,
         slidesToScroll: 1
         });
+        prevArrow: $(".pp2");
+nextArrow: $(".nn2");
+
       
     </script>
 </body>
