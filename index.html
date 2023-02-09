@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -17,7 +19,17 @@
         <h4>Hello World from Oleksii.</h4>
         <img src="img/img_1.jpg" alt="hello_world_pict">
     -->
-        
+        <style>
+            *{
+                background-color: gray;
+                
+            }
+            slick-arrow {
+                top: 0;
+                left: 100px;
+                position: absolute;
+            }
+        </style>
     </header>
     <main>
         <!-- 
@@ -45,9 +57,12 @@
               </p>
         </div>
     -->
-    <div class="slick-carousel">
-        <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
-        <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
+    <div class="slick-carousel" style="align-items: center;">
+
+            <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
+            <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
+            <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
+            <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
     </div>
     </main>
     <footer>
@@ -56,14 +71,12 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $(".slick-carousel").slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            slide: "div",
-            cssEase: "linear"
-      });
+
+        $('.slick-carousel').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1
+        });
       
     </script>
 </body>
