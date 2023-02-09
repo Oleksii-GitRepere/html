@@ -22,19 +22,24 @@
         <style>
             *{
                 background-color: gray;
-                
+                position: relative;
+                box-sizing: border-box;
+
             }
-            .clr-gry.slick-arrow {
-    top: 0;
+
+            main{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                max-width: 1785px;
+            }
+
+            .slick-arrow {
     position: absolute;
-}
-.fa-angle-left.clr-gry {
-    right: 10px;
+    
 }
 
-.fa-angle-right.clr-gry {
-    right: 0;
-}
         </style>
     </header>
     <main>
@@ -63,14 +68,36 @@
               </p>
         </div>
     -->
-    <div class="slick-carousel" style="align-items: center;">
-        <button class="pp2">back</button>;
-            <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
-            <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
-            <div><img src="img/desserts/Indonesia/kuih_lapis.jpg" alt=""></div>
-            <div><img src="img/desserts/Indonesia/pisang_goreng.jpg" alt=""></div>
-        <button class="nn2">forward</button>;
-    </div>
+        <section>
+            <h1 style="text-align: center;">
+                Hello dear sweet teeth.
+            </h1>
+            <div class="slick-carousel"  style="position: relative; left: 20px;">
+                <div><img src="img/desserts/Turkey/asure.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/ayva_tatlısı.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/baklava.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/bal kaymak.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/cezerye.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/dondurma.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/ekmek_kadayıfı.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/fırın_sutlac.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/gaziantep_baklavası.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/gullac.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/irmik_helvası.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/kabak_tatlısı.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/kazandibi.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/keskul.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/kunefe.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/lokma.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/lokum.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/mehalabiya.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/sekerpare.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/sobiyet.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/tavuk_gogsu.jpg" alt=""></div>
+                <div><img src="img/desserts/Turkey/tulumba.jpg" alt=""></div>
+        </div>
+        </section>
+
     </main>
     <footer>
 
@@ -80,9 +107,14 @@
     <script>
 
         $('.slick-carousel').slick({
+            arrows: true,
+            dots: true,
         lazyLoad: 'ondemand',
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: true
+
+        
         });
         prevArrow: $(".pp2");
 nextArrow: $(".nn2");
