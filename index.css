@@ -1,0 +1,10 @@
+
+
+.wrapper_div{
+    background-image: url("img/desserts/Vietnam/che.jpg");
+    width: 720px;
+    height: 720px;
+
+   background-repeat: no-repeat;
+   margin: auto auto;
+}
