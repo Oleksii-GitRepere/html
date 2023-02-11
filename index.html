@@ -1,78 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical work</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=360, initial-scale=1.0">
+
+    
+
 
 </head>
+
 <body>
     <header>
-        <!--
-            <h1>Practical work.</h1>
-        <h4>Hello World from Oleksii.</h4>
-        <img src="img/img_1.jpg" alt="hello_world_pict">
-    -->
-        <style>
-            *{
-                background-color: gray;
-                position: relative;
-                box-sizing: border-box;
 
-            }
-
-            main{
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                max-width: 1785px;
-            }
-
-            .slick-arrow {
-    position: absolute;
-    
-}
-
-        </style>
     </header>
     <main>
-        <!-- 
-            <div>
-            <p>The genus contains five species:</p>
-            <ol>
-                <li>Canada.</li>
-                <li>United States.</li>
-                <li>Mexico.</li>
-                <li>Central and northern South America.</li>
-            </ol>
-            <p>Birds found in:</p>
-            <ul>
-                <li>Brown violetear.</li>
-                <li>Mexican violetear.</li>
-                <li>Lesser violetear.</li>
-                <li>Sparkling violetear.</li>
-                <li>White-vented violetear.</li>
-              </ul>
-              <p>
-                <i>Click here to view more</i>
-                <a href="https://en.wikipedia.org/wiki/Violetear" target="_blank">
-                    <b>click</b>
-                </a> 
-              </p>
-        </div>
-    -->
         <section>
             <h1 style="text-align: center;">
                 Hello dear sweet teeth.
             </h1>
-            <div class="slick-carousel"  style="position: relative; left: 20px;">
+            <div class="slick-carousel" style="background-size: cover;">
                 <div><img src="img/desserts/Turkey/dondurma.jpg" alt=""></div>
                 <div><img src="img/desserts/Turkey/ekmek_kadayıfı.jpg" alt=""></div>
                 <div><img src="img/desserts/Turkey/fırın_sutlac.jpg" alt=""></div>
@@ -95,8 +54,11 @@
                 <div><img src="img/desserts/Turkey/baklava.jpg" alt=""></div>
                 <div><img src="img/desserts/Turkey/bal kaymak.jpg" alt=""></div>
                 <div><img src="img/desserts/Turkey/cezerye.jpg" alt=""></div>
-        </div>
+            </div>
         </section>
+        <div class="wrapper_div">
+            <p>Wrapper text</p>
+        </div>
 
     </main>
     <footer>
@@ -109,15 +71,16 @@
         $('.slick-carousel').slick({
             arrows: true,
             dots: true,
-        lazyLoad: 'ondemand',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        variableWidth: true
+            lazyLoad: 'ondemand',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: true
 
-        
+
         });
 
-      
+
     </script>
 </body>
+
 </html>
