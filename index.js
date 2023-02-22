@@ -6,22 +6,16 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-carousel_slides = 
-{
-    [],
-    [],
-    [],
-    []
-}
+carousel_slides = [`<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
+                    `<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="../img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
+                    `<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="../img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
+                    `<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="../img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
+
+/*
     slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
     slide_3.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/asure.jpg" alt=""></img>`;
     slide_4.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/tulumba.jpg" alt=""></img>`;
     slide_5.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/sobiyet.jpg" alt=""></img>`;
 */
 
-carousel_wrapper.innerHTML += `<div style="height: 320px; width: 100%"> 
-                        <img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img> 
-                        </div>
-                        <div style="height: 320px; width: 100%"> 
-                        <img style="height: 100%; width: 100%" src="../img/desserts/Turkey/asure.jpg" alt=""></img> 
-                        </div>`;
+carousel_wrapper.innerHTML += carousel_slides[0];
