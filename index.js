@@ -6,7 +6,9 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-slide_1.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/cezerye.jpg" alt=""></img>`;
+slide_1.innerHTML += `<button name="->" style="font-size: 15px; width: 50px; height: 50px;" class="img_carousel__next">next</button> +
+                        <img style="height: 100%; width: 100%" src="../img/desserts/Turkey/cezerye.jpg" alt=""></img> + 
+                        <button name="<-" style="font-size: 15px; width: 50px; height: 50px;" class="img_carousel__prev">prev</button>`;
 /*
 slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
 slide_3.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/asure.jpg" alt=""></img>`;
