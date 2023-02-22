@@ -22,7 +22,7 @@ carousel_wrapper.innerHTML += `<button id="img_carousel_prev_btn" style="height:
 let num=0;
 function change_img(num)
 {
-    num = num>carousel_slides.length-1 ? 0 : num++;
+    num = num>carousel_slides.length-1 ? 0 : ++num;
     carousel_wrapper.innerHTML +=  carousel_slides[num]; //+carousel_slides[1];
 }
 carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
