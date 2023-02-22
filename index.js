@@ -6,7 +6,7 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-slide_1.innerHTML += `<div dtyle="height: 320px; width: 100%">
+slide_1.innerHTML += `<div style="height: 320px; width: 100%">
                         <img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>
                         </div>`;
 /*
