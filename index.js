@@ -26,6 +26,7 @@ document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
 {
     num++;
 });
+
 setInterval(()=>{
         document.getElementById("div_p").innerHTML = num;
         num = num>carousel_slides.length-1 ? 0 : num;
