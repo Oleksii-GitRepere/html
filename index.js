@@ -19,10 +19,11 @@ var carousel_slides = [`<div style="height: 320px; width: 100%"><img style="heig
 */
 
 carousel_wrapper.innerHTML += `<button id="img_carousel_prev_btn" style="height: 30px; width: 60px">prev</button>`;
-let num=0;
-function change_img(num)
+
+function change_img()
 {
-    num = num>carousel_slides.length-1 ? 0 : ++num;
+    let num=0;
+    num = num>carousel_slides.length-1 ? 0 : num++;
     carousel_wrapper.innerHTML +=  carousel_slides[num]; //+carousel_slides[1];
 }
 carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
