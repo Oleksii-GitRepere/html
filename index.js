@@ -18,6 +18,6 @@ carousel_slides = [`<div style="height: 320px; width: 100%"><img style="height: 
     slide_5.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/sobiyet.jpg" alt=""></img>`;
 */
 
-carousel_wrapper.innerHTML += `<button style="height: 30px; width: 30px">prev</button>`;
+carousel_wrapper.innerHTML += `<button style="height: 30px; width: 60px">prev</button>`;
 carousel_wrapper.innerHTML += carousel_slides[0]+carousel_slides[1];
-carousel_wrapper.innerHTML += `<button style="height: 30px; width: 30px">next</button>`;
+carousel_wrapper.innerHTML += `<button style="height: 30px; width: 60px">next</button>`;
