@@ -1,10 +1,41 @@
+*{
+    box-sizing: border-box;
+}
 
+.main_wrapper{
+    background-color: black;
+    width : 920px; 
+    height: 1200px;
+    background-repeat: no-repeat;
+}
+
+.wrapper_carousel{
+    background-image: url("../img/desserts/Vietnam/steamed_tapioca_layer_cake.jpg"); 
+    width: 920px; 
+    height: 260px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.wrapper{
+    background-image: url("../img/desserts/Vietnam/coconut_jelly.jpg");
+    
+    width: 920px;
+    height: 520px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 
 .wrapper_div{
-    background-image: url("img/desserts/Vietnam/che.jpg");
-    width: 720px;
-    height: 720px;
+    background-image: url("../img/desserts/Vietnam/che.jpg");
+    width: 420px;
+    height: 420px;
+    background-repeat: no-repeat;
+    margin: 0;
 
-   background-repeat: no-repeat;
-   margin: auto auto;
 }
