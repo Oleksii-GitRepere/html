@@ -20,14 +20,12 @@ var carousel_slides = [`<div style="height: 320px; width: 100%"><img style="heig
 
 carousel_wrapper.innerHTML += `<button id="img_carousel_prev_btn" style="height: 30px; width: 60px">prev</button>`;
 
-var num=0;
-function change_img()
-{
-    num++;
-    div_p.innerHTML=num;
-    
-}
+
 carousel_wrapper.innerHTML +=  carousel_slides[0]; //+carousel_slides[1];
 carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
-
-document.getElementById("img_carousel_next_btn").addEventListener("click", change_img());
+var num=0;
+document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
+{
+    num++;
+});
+setInterval(()=>document.getElementById("div_p").innerHTML = num ,300);
