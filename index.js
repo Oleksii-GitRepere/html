@@ -27,4 +27,4 @@ function change_img(num)
 }
 carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
 
-document.getElementById("img_carousel_next_btn").addEventListener('click', change_img());
+document.getElementById("img_carousel_next_btn").addEventListener('click', change_img(0));
