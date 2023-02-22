@@ -7,7 +7,7 @@ var slide_5 = document.getElementById("slide_5");
 */
 
 slide_1.innerHTML += `<button name="->" style="font-size: 15px; width: 50px; height: 50px;" class="img_carousel__next">next</button> +
-                        <img style="height: 100%; width: 100%" src="../img/desserts/Turkey/cezerye.jpg" alt=""></img> + 
+                        <div style="height: 250px; width: 100%;"><img style="height: 100%; width: 100%" src="../img/desserts/Turkey/cezerye.jpg" alt=""></img></div> + 
                         <button name="<-" style="font-size: 15px; width: 50px; height: 50px;" class="img_carousel__prev">prev</button>`;
 /*
 slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
