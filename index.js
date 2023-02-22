@@ -1,4 +1,4 @@
-var slide_1 = document.getElementById("slide_1");
+var slide_1 = document.getElementById("img_carousel_div");
 /*
 var slide_2 = document.getElementById("slide_2");
 var slide_3 = document.getElementById("slide_3");
