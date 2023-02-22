@@ -20,7 +20,7 @@ var carousel_slides = [`<div style="height: 320px; width: 100%"><img style="heig
 
 carousel_wrapper.innerHTML += `<button id="img_carousel_prev_btn" style="height: 30px; width: 60px">prev</button>`;
 
-carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
+
 var num=0;
 document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
 {
@@ -29,6 +29,7 @@ document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
 setInterval(()=>{
         document.getElementById("div_p").innerHTML = num;
         num = num>carousel_slides.length-1 ? 0 : num;
-        carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
+        carousel_wrapper.innerHTML +=  carousel_slides[num]; //+carousel_slides[1];
     } 
 ,300);
+carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
