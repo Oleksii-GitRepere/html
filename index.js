@@ -25,14 +25,16 @@ var num=0;
 document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
 {
      num++;
+     num = num>carousel_slides.length-1 ? 0 : num;
 });
 document.getElementById("img_carousel_prev_btn").addEventListener("click",() =>
 {
      num--;
+     num = num<0 ? carousel_slides.length-1 : num;
 });
 
 setInterval(()=>{
-    num = (num>carousel_slides.length-1 || num<0) ? 0 : num;    
+        
     document.getElementById("div_p").innerHTML = num;
     carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
     } 
