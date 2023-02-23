@@ -28,8 +28,9 @@ document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
 });
 
 setInterval(()=>{
-        document.getElementById("div_p").innerHTML = num;
-        num = num>carousel_slides.length-1 ? 0 : num;
+    num = num>carousel_slides.length-1 ? 0 : num;    
+    document.getElementById("div_p").innerHTML = num;
+        
 //         carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
     } 
 ,300);
