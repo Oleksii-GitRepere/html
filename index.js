@@ -33,9 +33,16 @@ document.getElementById("img_carousel_prev_btn").addEventListener("click",() =>
      num = num<0 ? carousel_slides.length-1 : num;
 });
 
-setInterval(()=>{
-        
-    document.getElementById("useful_p").innerHTML = window.screen.availWidth;
-    carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
-    } 
+setInterval(()=>
+{
+    if(window.screen.availWidth < 450 )
+    {            
+        document.getElementById("useful_p").innerHTML = window.screen.availWidth;
+        carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
+    }else if(window.screen.availWidth < 790 )
+    {
+        document.getElementById("useful_p").innerHTML = window.screen.availWidth;
+        carousel_wrapper.innerHTML =  (num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[num+1]) : (carousel_slides[num] + carousel_slides[0]); //+carousel_slides[1];
+    }
+} 
 ,300);
