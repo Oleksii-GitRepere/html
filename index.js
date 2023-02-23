@@ -1,4 +1,4 @@
-var carousel_wrapper = document.getElementById("img_carousel_prev_btn");
+var carousel_wrapper = document.getElementById("img_carousel_div");
 /*
 var slide_2 = document.getElementById("slide_2");
 var slide_3 = document.getElementById("slide_3");
@@ -30,7 +30,6 @@ document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
 setInterval(()=>{
     num = num>carousel_slides.length-1 ? 0 : num;    
     document.getElementById("div_p").innerHTML = num;
-        
-        carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
+    carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
     } 
 ,300);
