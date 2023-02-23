@@ -45,7 +45,7 @@ setInterval(()=>
         carousel_wrapper.innerHTML =  (num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num+1]); //+carousel_slides[1];
     }else if(window.screen.availWidth > 950 )
     {
-        document.getElementById("useful_p").innerHTML = carousel_slides.length-num;
+        document.getElementById("useful_p").innerHTML = carousel_slides.length-num + " : " + num;
         carousel_wrapper.innerHTML =  (num+1 > carousel_slides.length-1) ? (carousel_slides[carousel_slides.length-2-num] + carousel_slides[carousel_slides.length-1-num] + carousel_slides[carousel_slides.length-num]) : (carousel_slides[num] + carousel_slides[num+1] + carousel_slides[num+2]); //+carousel_slides[1];
     }
 } 
