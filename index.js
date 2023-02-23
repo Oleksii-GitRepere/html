@@ -35,7 +35,7 @@ document.getElementById("img_carousel_prev_btn").addEventListener("click",() =>
 
 setInterval(()=>{
         
-    // document.getElementById("div_p").innerHTML = num;
+    document.getElementById("useful_p").innerHTML = window.screen.availWidth;
     carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
     } 
 ,300);
