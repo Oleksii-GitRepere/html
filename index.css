@@ -84,8 +84,6 @@ button {
 }
 
 .btn-close{
-    transform: translate(10px, -20px);
-    padding: 0.5rem 0.7rem;
     background: white;
     border-radius: 50%;
 }
