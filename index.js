@@ -33,8 +33,7 @@ document.getElementById("img_carousel_prev_btn").addEventListener("click",() =>
      num = num<0 ? carousel_slides.length-1 : num;
 });
 
-let num1 = num;
-let wrap="";
+
 
 setInterval(()=>
 {
@@ -48,7 +47,8 @@ setInterval(()=>
         carousel_wrapper.innerHTML =  (num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num+1]); //+carousel_slides[1];
     }else if(window.screen.availWidth > 950 )
     {
-
+        let num1 = num;
+        let wrap="";
 
         // document.getElementById("useful_p").innerHTML = num + " : " + num1;
         // carousel_wrapper.innerHTML =  carousel_slides[] + carousel_slides[] + carousel_slides[];//(num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num+1] + carousel_slides[num+2]); //+carousel_slides[1];
