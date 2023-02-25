@@ -49,11 +49,11 @@ setInterval(()=>
         let num1 = num;
         let wrap="";
 
-        document.getElementById("useful_p").innerHTML = carousel_slides.length-num + " : " + num;
+        // document.getElementById("useful_p").innerHTML = num + " : " + num1;
         // carousel_wrapper.innerHTML =  carousel_slides[] + carousel_slides[] + carousel_slides[];//(num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num+1] + carousel_slides[num+2]); //+carousel_slides[1];
         for(let i=0; i<carousel_slides.length-1; i++)
         {
-            wrap += carousel_slides[(num1>length-1) ? 0 : num1++];
+            wrap += carousel_slides[(num1>carousel_slides.length-1) ? 0 : num1++];
         }
         carousel_wrapper.innerHTML = wrap;
     }
