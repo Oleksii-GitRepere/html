@@ -46,18 +46,13 @@
 
 
 .modal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.4rem;
-    width: 450px;
-    padding: 1.3rem;
-    min-height: 250px;
+    width: 99%;
+    height: 99%;
     position: absolute;
-    top: 20%;
     background-color: white;
-    border: 1px xolid black;
+    border: 1px solid black;
     border-radius: 15px;
+    top: 0;
 }
 
 .modal .flex{
