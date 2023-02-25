@@ -50,7 +50,7 @@ setInterval(()=>
         let num1 = num;
         let wrap="";
 
-        // document.getElementById("useful_p").innerHTML = num + " : " + num1;
+        document.getElementById("useful_p").innerHTML = num;
         // carousel_wrapper.innerHTML =  carousel_slides[] + carousel_slides[] + carousel_slides[];//(num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num+1] + carousel_slides[num+2]); //+carousel_slides[1];
         for(let i=0; i<carousel_slides.length-1; i++)
         {
