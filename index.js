@@ -127,7 +127,7 @@ document.addEventListener("keydown", function (e) {
 function clickEvnt()
 {
     
-    modal_pict.innerHTML += "<img src=\"img/desserts/Japan/dorayaki.jpg\" style=\"height: 100%; width: 100%;\" alt=\"Japan dorayaki pict\"></img>";
+    // modal_pict.innerHTML += "<img src=\"img/desserts/Japan/dorayaki.jpg\" style=\"height: 100%; width: 100%;\" alt=\"Japan dorayaki pict\"></img>";
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
     console.log("s_1 clicked.");
