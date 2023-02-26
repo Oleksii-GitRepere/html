@@ -87,17 +87,6 @@ const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('slide_1');
-
-    console.log(btn);
-
-    btn.addEventListener('click', () => {
-        alert('You clicked the button');
-    });
-});
-
-
 const openModal = function () {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
