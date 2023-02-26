@@ -63,8 +63,14 @@ setInterval(()=>
 
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const openModalBtn = document.querySelector(".btn-open1");
+// const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
+
+
+document.getElementById(".btn-open1")[0].onclick = function () {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
 
 
 const openModal = function () {
