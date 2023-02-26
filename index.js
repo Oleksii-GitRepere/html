@@ -68,7 +68,7 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 
 
-document.getElementsById("btn")[0]
+document.getElementById("btn")
         .addEventListener('click', function (event) {
             alert('Hi!');
         });
