@@ -7,9 +7,9 @@ var slide_5 = document.getElementById("slide_5");
 */
 
 var carousel_slides = [`<div id="slide_1" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
-                    `<div id="slide_2" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
-                    `<div id="slide_3" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
-                    `<div id="slide_4" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
+    `<div id="slide_2" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
+    `<div id="slide_3" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
+    `<div id="slide_4" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
 
 /*
     slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
@@ -21,44 +21,37 @@ var carousel_slides = [`<div id="slide_1" class="btnopen"><img style="height: 10
 // carousel_wrapper.innerHTML += `<button id="img_carousel_prev_btn" style="height: 30px; width: 60px">prev</button>`;
 // carousel_wrapper.innerHTML += `<button id="img_carousel_next_btn" style="height: 30px; width: 60px">next</button>`;
 
-var num=0;
-document.getElementById("img_carousel_next_btn").addEventListener("click",() =>
-{
-     num++;
-     num = num>carousel_slides.length-1 ? 0 : num;
+var num = 0;
+document.getElementById("img_carousel_next_btn").addEventListener("click", () => {
+    num++;
+    num = num > carousel_slides.length - 1 ? 0 : num;
 });
-document.getElementById("img_carousel_prev_btn").addEventListener("click",() =>
-{
-     num--;
-     num = num<0 ? carousel_slides.length-1 : num;
+document.getElementById("img_carousel_prev_btn").addEventListener("click", () => {
+    num--;
+    num = num < 0 ? carousel_slides.length - 1 : num;
 });
 
 
-setInterval(()=>
-{
-    if(window.screen.availWidth < 450 )
-    {            
+setInterval(() => {
+    if (window.screen.availWidth < 450) {
         document.getElementById("useful_p").innerHTML = window.screen.availWidth;
-        carousel_wrapper.innerHTML =  carousel_slides[num]; //+carousel_slides[1];
-    }else if(window.screen.availWidth < 790 )
-    {
+        carousel_wrapper.innerHTML = carousel_slides[num]; //+carousel_slides[1];
+    } else if (window.screen.availWidth < 790) {
         document.getElementById("useful_p").innerHTML = window.screen.availWidth;
-        carousel_wrapper.innerHTML =  (num+1 > carousel_slides.length-1) ? (carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num+1]); //+carousel_slides[1];
-    }else if(window.screen.availWidth > 950 )
-    {
+        carousel_wrapper.innerHTML = (num + 1 > carousel_slides.length - 1) ? (carousel_slides[num] + carousel_slides[0]) : (carousel_slides[num] + carousel_slides[num + 1]); //+carousel_slides[1];
+    } else if (window.screen.availWidth > 950) {
         let num1 = num;
-        let wrap="";
+        let wrap = "";
 
         document.getElementById("useful_p").innerHTML = num;
-        for(let i=0; i<carousel_slides.length-1; i++)
-        {
+        for (let i = 0; i < carousel_slides.length - 1; i++) {
             wrap += carousel_slides[num1++];
-            num1 = num1<carousel_slides.length ? num1 : 0;
+            num1 = num1 < carousel_slides.length ? num1 : 0;
         }
         carousel_wrapper.innerHTML = wrap;
     }
-} 
-,300);
+}
+    , 300);
 
 
 const modal = document.querySelector(".modal");
@@ -68,39 +61,40 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 
 
-const slide = document.getElementById("slide_1");
 
-if(slide){
-        slide.addEventListener('click', function (event) {
-            alert('Hi!');
-        });
-    }
-    
-  
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('slide_1');
+
+    console.log(btn);
+
+    btn.addEventListener('click', () => {
+        alert('You clicked the button');
+    });
+});
 
 
 const openModal = function () {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
-  };
+};
 
 
-  openModalBtn.addEventListener("click", openModal);
+openModalBtn.addEventListener("click", openModal);
 
-  const closeModal = function () {
+const closeModal = function () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
-  };
+};
 
-  closeModalBtn.addEventListener("click", closeModal);
+closeModalBtn.addEventListener("click", closeModal);
 
 
-  overlay.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
 
-  document.addEventListener("keydown");
+document.addEventListener("keydown");
 
-  document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-      modalClose();
+        modalClose();
     }
-  });
+});
