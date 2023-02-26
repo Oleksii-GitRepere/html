@@ -6,7 +6,7 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-var carousel_slides = [`<div class="btn-open1" style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
+var carousel_slides = [`<div id="btn-open1" style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
                     `<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
                     `<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
                     `<div style="height: 320px; width: 100%"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
@@ -67,12 +67,13 @@ const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn-close");
 
 
-(document.getElementByClassName("btn-open1")[0]).addEventListener('click', () => {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
+document.getElementById("btn-open1").addEventListener('click', () => 
+{
     num++;
     document.getElementById("useful_p").innerHTML = num;
-  });
+});
+    
+  
 
 
 const openModal = function () {
