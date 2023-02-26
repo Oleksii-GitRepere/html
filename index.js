@@ -100,6 +100,8 @@ document.addEventListener("keydown", function (e) {
 });
 
 function clickEvnt()
-{
+
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
     console.log("s_1 clicked.");
 }
