@@ -67,13 +67,12 @@ const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn-close");
 
 
-document.getElementById("btn-open1")[0].onclick = function () {
+document.getElementById("btn-open1")[0].addEventListener("click", () => {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
-
     num++;
     document.getElementById("useful_p").innerHTML = num;
-  };
+  });
 
 
 const openModal = function () {
