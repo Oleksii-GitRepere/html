@@ -1,4 +1,5 @@
 var carousel_wrapper = document.getElementById("img_carousel_div");
+var modal_pict = document.getElementById("modal_pict");
 /*
 var slide_2 = document.getElementById("slide_2");
 var slide_3 = document.getElementById("slide_3");
@@ -6,10 +7,10 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-var carousel_slides = [`<div id="slide_1" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
-    `<div id="slide_2" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
-    `<div id="slide_3" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
-    `<div id="slide_4" class="btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
+var carousel_slides = [`<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
+    `<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
+    `<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
+    `<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
 
 /*
     slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
@@ -60,8 +61,6 @@ const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('slide_1');
 
@@ -101,6 +100,7 @@ document.addEventListener("keydown", function (e) {
 
 function clickEvnt()
 {
+    modal_pict.innerHTML += "<img src=\"img/desserts/Japan/dorayaki.jpg\" style=\"height: 100%; width: 100%;\" alt=\"Japan dorayaki pict\"></img>";
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
     console.log("s_1 clicked.");
