@@ -127,7 +127,7 @@ document.addEventListener("keydown", function (e) {
 function clickEvnt(dataId)
 {
     
-    modal_pict.innerHTML += modal_picts[parseInt(this.dataId)];
+    modal_pict.innerHTML += modal_picts[parseInt(dataId)];
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
     console.log("s_1 clicked.");
