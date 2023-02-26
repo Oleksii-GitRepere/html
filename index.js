@@ -68,11 +68,10 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 
 
-var div = document
-document.getElementById("btn-open1").addEventListener('click', () => 
-{
-    num++;
-    document.getElementById("useful_p").innerHTML = num;
+var div = document.getElementsByClassName("btn-open1")[0];
+
+div.addEventListener('click', function (event) {
+    alert('Hi!');
 });
     
   
