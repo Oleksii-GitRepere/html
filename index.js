@@ -67,11 +67,12 @@ const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn-close");
 
 
-
+window.onload=function(){
 document.getElementById("slide_1")
         .addEventListener('click', function (event) {
             alert('Hi!');
         });
+    }
     
   
 
