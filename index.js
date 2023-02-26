@@ -67,9 +67,11 @@ const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn-close");
 
 
-window.onload=function(){
-document.getElementById("slide_1")
-        .addEventListener('click', function (event) {
+
+const slide = document.getElementById("slide_1");
+
+if(slide){
+        slide.addEventListener('click', function (event) {
             alert('Hi!');
         });
     }
