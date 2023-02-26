@@ -70,7 +70,7 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 var div = document.getElementsByClassName("btn-open1")[0];
 
-div.addEventListener('click', function (event) {
+div.addEventListener('click', () => {
     alert('Hi!');
 });
     
