@@ -7,10 +7,36 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-var carousel_slides = [`<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
+const carousel_slides = [`<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
     `<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
     `<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
     `<div><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
+
+const modal_picts = [
+    '<img src="img/desserts/Turkey/dondurma.jpg" " alt="">',
+    '<img src="img/desserts/Turkey/ekmek_kadayıfı.jpg" alt="">',
+    '<img src="img/desserts/Turkey/fırın_sutlac.jpg" alt="">',
+    '<img src="img/desserts/Turkey/gaziantep_baklavası.jpg" alt="">',
+    '<img src="img/desserts/Turkey/gullac.jpg" alt="">',
+    '<img src="img/desserts/Turkey/irmik_helvası.jpg" alt="">',
+    '<img src="img/desserts/Turkey/kabak_tatlısı.jpg" alt="">',
+    '<img src="img/desserts/Turkey/kazandibi.jpg" alt="">',
+    '<img src="img/desserts/Turkey/keskul.jpg" alt="">',
+    '<img src="img/desserts/Turkey/kunefe.jpg" alt="">',
+    '<img src="img/desserts/Turkey/lokma.jpg" alt="">',
+    '<img src="img/desserts/Turkey/lokum.jpg" alt="">',
+    '<img src="img/desserts/Turkey/mehalabiya.jpg" alt="">',
+    '<img src="img/desserts/Turkey/sekerpare.jpg" alt="">',
+    '<img src="img/desserts/Turkey/sobiyet.jpg" alt="">',
+    '<img src="img/desserts/Turkey/tavuk_gogsu.jpg" alt="">',
+    '<img src="img/desserts/Turkey/tulumba.jpg" alt="">',
+    '<img src="img/desserts/Turkey/asure.jpg" alt="">',
+    '<img src="img/desserts/Turkey/ayva_tatlısı.jpg" alt="">',
+    '<img src="img/desserts/Turkey/baklava.jpg" alt="">',
+    '<img src="img/desserts/Turkey/bal kaymak.jpg" alt="">',
+    '<img src="img/desserts/Turkey/cezerye.jpg" alt="">'
+
+]; 
 
 /*
     slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
@@ -100,6 +126,7 @@ document.addEventListener("keydown", function (e) {
 
 function clickEvnt()
 {
+    
     modal_pict.innerHTML += "<img src=\"img/desserts/Japan/dorayaki.jpg\" style=\"height: 100%; width: 100%;\" alt=\"Japan dorayaki pict\"></img>";
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");

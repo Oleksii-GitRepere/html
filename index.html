@@ -107,7 +107,11 @@
             focusOnSelect:true
 
         });
-        $("#slick-slide00").on("click", function(){clickEvnt();});
+        $("#slick-slide"+).on("click", function(){clickEvnt();});
+        $('.slick-carousel').on('afterChange', function() {
+            var dataId = $('.slick-current').attr("data-slick-index");    
+            console.log(dataId);
+        });
 
 
     </script>
