@@ -107,10 +107,11 @@
             focusOnSelect:true
 
         });
-        $("#slick-slide").on("click", function(){clickEvnt();});
+        // $("#slick-slide").on("click", function(){});
         $('.slick-carousel').on("click", function() {
             var dataId = $('.slick-current').attr("data-slick-index");    
             console.log(parseInt(dataId)>9 ? dataId : "0"+dataId);
+            clickEvnt(dataId);
         });
 
 
