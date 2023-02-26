@@ -98,3 +98,8 @@ document.addEventListener("keydown", function (e) {
         modalClose();
     }
 });
+
+function clickEvnt()
+{
+    console.log("s_1 clicked.");
+}
