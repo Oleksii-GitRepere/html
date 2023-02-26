@@ -6,10 +6,10 @@ var slide_4 = document.getElementById("slide_4");
 var slide_5 = document.getElementById("slide_5");
 */
 
-var carousel_slides = [`<div class="btn-open1"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
-                    `<div class="btn-open1"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
-                    `<div class="btn-open1"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
-                    `<div class="btn-open1"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
+var carousel_slides = [`<div class="btn-open1 btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/bal kaymak.jpg" alt=""></img></div>`,
+                    `<div class="btn-open1 btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/asure.jpg" alt=""></img></div>`,
+                    `<div class="btn-open1 btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/tulumba.jpg" alt=""></img></div>`,
+                    `<div class="btn-open1 btnopen"><img style="height: 100%; width: 100%" src="img/desserts/Turkey/sobiyet.jpg" alt=""></img></div>`];
 
 /*
     slide_2.innerHTML += `<img style="height: 100%; width: 100%" src="../img/desserts/Turkey/bal kaymak.jpg" alt=""></img>`;
@@ -68,11 +68,10 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 
 
-var div = document.getElementsByClassName("btn-open1")[0];
-
-div.addEventListener('click', () => {
-    alert('Hi!');
-});
+document.getElementsByClassName('btnopen')[0]
+        .addEventListener('click', function (event) {
+            alert('Hi!');
+        });
     
   
 
