@@ -63,11 +63,11 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementsByClassName('btnopen');
+    const btn = document.getElementById('slide_1');
 
     console.log(btn);
 
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', () => {
         alert('You clicked the button');
     });
 });
