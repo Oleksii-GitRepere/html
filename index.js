@@ -63,7 +63,7 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('btnopen');
+    const btn = document.getElementsByClassName('btnopen');
 
     console.log(btn);
 
