@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log(btn);
 
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', function () {
         alert('You clicked the button');
     });
 });
